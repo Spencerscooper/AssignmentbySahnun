@@ -1,0 +1,212 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary-color: #F9C846;
+    --bg-secondary-color: #545863;
+    --font-color-white: #ffffffee;
+    --background-color-white: #ffffffee;
+    --font-color-primary: #112A46;
+}
+
+img {
+    width: 100%;
+}
+
+header,
+footer {
+    background-color: var(--bg-primary-color);
+    padding: 24px 0;
+}
+
+
+
+/* Utiity class */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+
+button {
+    width: 20%;
+    font-size: 1.3rem;
+    padding: 0.8em;
+    margin-top: 0.4em;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+    border-radius: 0.2em;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 3.0rem;
+    color: var(--font-color-white);
+}
+
+/* End of utility classes */
+
+
+.navbar .flex {
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    padding: 0 0.8em;
+    transition: 1s ease-in-out;
+    transition: scale(1);
+}
+
+.navbar ul a:hover {
+    color: white;
+    transition: scale(1.1);
+}
+
+.spence-intro .flex {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+}
+
+section {
+    background-color: var(--bg-secondary-color);
+    color: var(--font-color-white);
+    min-height: 65vh;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+}
+
+.num-of-project {
+    background-color: var(--background-color-white);
+}
+
+.num-of-project .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.num-of-project .projects h3 {
+    color: var(--font-color-primary);
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    margin-top: 0.5em;
+
+}
+
+.spence-intro .intro h3 {
+    font-size: 6rem;
+    color: var(--font-color-white);
+    margin-bottom: 0;
+}
+
+.spence-intro .intro p {
+    font-size: 1.5rem;
+}
+
+.intro button:hover {
+    transform: scale(1.1);
+}
+
+.num-of-project .project-info .flex {
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    flex-wrap: wrap;
+
+}
+
+.project-info .each-project img {
+    max-width: 350px;
+    display: block;
+}
+
+.about .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .about-me p {
+    font-size: 1.3rem;
+    padding: 0.5em;
+
+}
+
+.footer-section .flex {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link-to-top {
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    position: relative;
+    background-color: var(--background-color-white);
+
+    width: 40px;
+    margin-bottom: 34px;
+    border-radius: 12px;
+    transition: 1s ease-in-out;
+    background-color: green;
+}
+
+.link-to-top:hover {
+    background-color: green;
+}
+
+.back-to-up {
+    background-color: var(--background-color-white);
+    width: 50px;
+    height: 30px;
+    padding: 0.8em;
+    position: absolute;
+    right: 0;
+}
+
+.footer-section .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}

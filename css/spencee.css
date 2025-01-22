@@ -144,17 +144,17 @@ section {
     transform: scale(1.1);
 }
 
-.num-of-project .project-info .flex {
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+.num-of-project .projects .flex {
+    justify-content: left;
+    align-items: left;
+    width: 100%;
     flex-wrap: wrap;
 
 }
 
 .project-info .each-project img {
-    max-width: 350px;
-    display: block;
+    max-width: 200px;
+    /* display: block; */
 }
 
 .about .about-me {

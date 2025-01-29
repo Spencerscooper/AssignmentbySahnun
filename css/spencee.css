@@ -16,10 +16,49 @@ html {
     --font-color-primary: #112A46;
 }
 
+/* General Animation */
+
+@keyframes animation_Scale {
+    from {
+        transform: scale(0);
+        opacity: 0;
+
+
+
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+
+}
+
+.spence-intro h3,
+.spence-intro p {
+    animation-name: animation_Scale;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+.spence-intro p {
+    animation-duration: 2s;
+}
+
 
 
 img {
     width: 100%;
+}
+
+.about-me img {
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid var(--background-color-white);
+    display: block;
 }
 
 header,
@@ -106,22 +145,16 @@ section {
     background-color: var(--bg-secondary-color);
     color: var(--font-color-white);
     min-height: 65vh;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    display: flex;
+    width: 100%;
 }
+
 
 .num-of-project {
     background-color: var(--background-color-white);
 }
 
 .num-of-project .projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 30px;
+    margin-bottom: 2.2rem;
 }
 
 .num-of-project .projects h3 {
@@ -129,6 +162,31 @@ section {
     font-size: 3.5rem;
     text-transform: capitalize;
     margin-top: 0.5em;
+    text-align: center;
+    margin-bottom: 0.8em;
+
+}
+
+.num-of-project .project-info {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 14px;
+
+}
+
+.each-project {
+    width: 30%;
+
+}
+
+.num-of-project .each-project img {
+    max-width: 90%;
+    border-radius: 2rem;
+
 
 }
 
@@ -146,18 +204,7 @@ section {
     transform: scale(1.1);
 }
 
-.num-of-project .projects .flex {
-    justify-content: left;
-    align-items: left;
-    width: 100%;
-    flex-wrap: wrap;
 
-}
-
-.project-info .each-project img {
-    max-width: 200px;
-    /* display: block; */
-}
 
 .about .about-me {
     display: flex;
@@ -237,4 +284,42 @@ section {
     padding: 0.8em 0;
     color: var(--bg-secondary-color);
     font-weight: 900;
+}
+
+@media (min-width: 350px) and (max-width : 500px) {
+
+    /* ============Nav-Bar================== */
+    #top .flex {
+        flex-direction: column;
+    }
+
+    #top .navbar ul {
+        display: flex;
+    }
+
+    /* ========Hero Section ========== */
+    .spence-intro .intro h3 {
+        font-size: 3rem;
+    }
+
+    button {
+        width: 40%;
+    }
+
+    /* ==========End of Hero Section==================== */
+    .num-of-project .project-info {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .each-project {
+        width: 100%;
+
+    }
+
+    .num-of-project .each-project img {
+        max-width: 90%;
+        border-radius: 2rem;
+    }
 }
